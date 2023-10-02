@@ -1,0 +1,27 @@
+.navbar{
+  background: rgb(242,203,0);
+  background: linear-gradient(129deg, rgba(242,203,0,1) 23%, rgba(255,248,160,1) 24%, rgba(242,203,0,1) 24%, rgba(242,203,0,1) 52%, rgba(255,248,160,1) 53%, rgba(242,203,0,1) 53%, rgba(242,203,0,1) 83%, rgba(255,248,160,1) 84%, rgba(242,203,0,1) 84%);
+  animation: identifier 50s infinite cubic-bezier(0,0,0,0);
+  box-shadow: 0 0 1rem 0.3rem rgb(242,203,0) ;
+}
+
+
+
+@keyframes identifier {
+   
+    100% {background-position-x: 77rem }
+    
+}
+
+.navbutton{
+backdrop-filter: blur(5px);
+transition: 1.5s;
+cursor: default;
+
+
+}
+.navbutton:hover{
+background-color: white;
+color: #f2cb00;
+transition: .4s;
+}
