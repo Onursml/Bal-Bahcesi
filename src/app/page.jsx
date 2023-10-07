@@ -1,8 +1,7 @@
 import Basket from '@/components/Basket/Basket'
 import Gallery from '@/components/Gallery/Gallery'
 import Production from '@/components/Production/Production'
-import Navbar from '@/components/navbar'
-import Image from 'next/image'
+
 
 export default function Home() {
   return (
