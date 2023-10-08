@@ -7,8 +7,6 @@ function Production() {
          <Product/>
          <Product/>
          <Product/>
-         <Product/>
-         <Product/>
             </div>
     )
 }

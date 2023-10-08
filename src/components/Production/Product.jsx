@@ -2,7 +2,8 @@ import React from 'react'
 
 function Product() {
     return (
-        <div className=' w-28 border rounded-lg h-[90%]' >
+        <div className=' w-28 border border-spacing-8  rounded-lg h-[90%]' >
+            saddssadsax
             dss</div>
     )
 }
