@@ -7,7 +7,7 @@ export default function Home() {
   return (
  <main className='flex h-full screen '>
  
-  <div className=' gap-5 w-full h-[90.5vh] flex flex-col pl-14 pr-6 '>
+  <div className=' max-sm:hidden gap-5 w-full h-[90.5vh] flex flex-col pl-14 pr-6 '>
  <Gallery/>
  <Production/>
 
