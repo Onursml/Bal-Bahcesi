@@ -5,9 +5,9 @@ import Production from '@/components/Production/Production'
 
 export default function Home() {
   return (
- <main className='flex h-full screen '>
+ <main className='flex w-full h-full screen '>
  
-  <div className=' max-sm:hidden gap-5 w-full h-[90.5vh] flex flex-col pl-14 pr-6 '>
+  <div className=' max-sm:hidden gap-5 w-[80%] h-[90.5vh] flex flex-col pl-14 pr-6 '>
  <Gallery/>
  <Production/>
 

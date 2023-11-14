@@ -1,0 +1,14 @@
+.sepet{
+    background: rgb(55,255,209);
+background: linear-gradient(180deg, rgba(55,255,209,0) 16%, rgba(156,227,96,1) 51%, rgba(242,203,0,1) 81%);
+border: 3px solid yellow;
+}
+
+
+
+.urun-text{
+color: aliceblue;
+text-overflow: ellipsis;
+font-size: 80%;
+
+}

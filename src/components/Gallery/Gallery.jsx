@@ -4,8 +4,8 @@ import İmage from 'next/image'
 import './Gallery.css'
 import Photocomp from './photocomp';
 function Gallery() {
-    const [scrollHeight, setScrollHeight] = useState();
-    const containerRef = useRef(null)
+  
+    
 
    
 
@@ -14,7 +14,7 @@ function Gallery() {
 
   
   return (
-    <div className='flex w-full gap-2 p-2 overflow-scroll border h-60 gallery'>
+    <div className='flex w-full gap-2 p-2 overflow-scroll shadow-2xl h-60 gallery'>
       
         <Photocomp foto="/bal.jpg"/>
         <Photocomp foto="/bal1.jpg"/>

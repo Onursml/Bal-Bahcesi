@@ -1,0 +1,36 @@
+.pro{
+overflow: hidden;
+   
+    
+    background-repeat: no-repeat;
+    background-size:135% ;
+    background-position-x: center;
+    background-position-y:-1rem ;
+}
+
+
+.text{
+    background: rgb(242,203,0);
+    background: linear-gradient(129deg, rgba(242,203,0,1) 23%, rgba(255,248,160,1) 24%, rgba(242,203,0,1) 24%, rgba(242,203,0,1) 52%, rgba(255,248,160,1) 53%, rgba(242,203,0,1) 53%, rgba(242,203,0,1) 83%, rgba(255,248,160,1) 84%, rgba(242,203,0,1) 84%);
+    animation: identifier 50s infinite cubic-bezier(0,0,0,0);
+}
+
+@keyframes identifier {
+   
+    100% {background-position-x: 77rem }
+    
+}
+
+
+
+
+.info{
+    backdrop-filter: blur(2px);
+    position: absolute;
+    background-color: rgba(240, 248, 255, 0.703);
+    left: 0;
+    
+    transition: 1s;
+
+}
+
