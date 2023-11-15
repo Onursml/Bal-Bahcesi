@@ -14,7 +14,7 @@ function Gallery() {
 
   
   return (
-    <div className='flex w-full gap-2 p-2 overflow-scroll shadow-2xl h-60 gallery'>
+    <div className='flex w-full gap-2 p-2 overflow-scroll shadow-2xl h-60 gallery max-sm:p-0'>
       
         <Photocomp foto="/bal.jpg"/>
         <Photocomp foto="/bal1.jpg"/>

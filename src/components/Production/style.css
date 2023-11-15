@@ -6,6 +6,8 @@ overflow: hidden;
     background-size:135% ;
     background-position-x: center;
     background-position-y:-1rem ;
+    transition: .6s;
+
 }
 
 
@@ -34,3 +36,7 @@ overflow: hidden;
 
 }
 
+.pro:hover{
+    transform: scale(1.1);
+  
+}

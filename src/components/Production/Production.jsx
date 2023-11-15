@@ -9,9 +9,9 @@ function Production() {
 
 
     return (
-        <div className='flex w-full gap-2 px-3 py-3 overflow-hidden shadow-xl rounded-2xl min-w-min h-52 '>
+        <div className='flex w-full gap-2 px-3 py-3 overflow-hidden shadow-xl rounded-2xl min-w-min h-60 '>
        {products.map((product)=>(
-           <Product key={product.id} title={product.ad} text={product.text} resim={product.id} />
+           <Product key={product.id} title={product.ad} text={product.text} resim={product.id} fiyat={product.fiyat} />
        ))}
          
             </div>

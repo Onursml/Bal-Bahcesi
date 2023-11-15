@@ -4,6 +4,12 @@
 @tailwind components;
 @tailwind utilities;
 
+
+body{
+    width: 100%;
+    
+}
+
 .screen{
     background: rgb(55,255,209);
 background: linear-gradient(340deg, rgba(20, 195, 0, 0.277) 16%, #f2ca00cb 81%);
