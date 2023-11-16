@@ -9,4 +9,17 @@
   }
   
   /* Kaydırma çubuğu özelleştirme */
+  .gallery::-webkit-scrollbar {
+    width: 20px; /* Kaydırma çubuğu genişliği (örnek) */
+    height: 5px;
+  }
   
+  .gallery::-webkit-scrollbar-thumb {
+   
+    background-color: #eeb600; /* Kaydırma çubuğu başlık rengi (örnek) */
+    border-radius: 5px; /* Köşe yuvarlama (örnek) */
+  }
+  
+  .gallery::-webkit-scrollbar-thumb:hover {
+    background-color: #747a00; /* Kaydırma çubuğu başlık rengi (üzerine gelince) */
+  }

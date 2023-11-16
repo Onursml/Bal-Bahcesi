@@ -14,7 +14,7 @@ function Product(p) {
     useEffect(()=>{
         getDownloadURL(storafeRef).then((url)=>{
           setresim(url)
-          console.log(url)
+        
         }).catch(error=> console.log(error))
        
         return ()=>{
@@ -27,7 +27,7 @@ function Product(p) {
     
     return (
    <Link href={`/product/${p.resim}`}>
-           <div  style={{}} className=' shadow-2xl pro w-32  border-spacing-8 relative rounded-lg h-[100%]' >
+           <div  style={{}} className='  shadow-2xl pro w-32  border-spacing-8 relative rounded-lg h-[100%]' >
 <img className='h-[85%] w-full'  style={{objectFit:'cover',}} src={resim} alt="" />
 <h4 className='absolute bottom-0 left-0 w-full h-12 text-center border rounded-md text text-anarenk2 font-fontc'>
   <div className='flex flex-col w-full h-full '>

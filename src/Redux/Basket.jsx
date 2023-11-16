@@ -1,13 +1,10 @@
 import { createSlice } from '@reduxjs/toolkit'
+import { data } from 'autoprefixer';
 
 const initialState = {
   sepet: [
-    {name: "Elma dsadsad", price : 10  , id:345345},
-    {name: "ayva dsad", price : 15  , id:345545},  
-    {name: "kiraz ssadsa", price : 25 , id:355345},
-    {name: "kiraz sdasd", price : 25 , id:3455345},
-    {name: "kiraz sdsad", price : 25 , id:345535},
-    {name: "kir sdsad", price : 25 , id:3455435}
+    
+ 
   ],
 }
 
@@ -20,9 +17,11 @@ export const basketSlice  = createSlice({
       state.sepet = newBasket;
     }
 ,
-    addBasket: (state, ) => {
-      state.sepet.push({name: "Elma dsadsad", price : 10  , id:34345});
-    
+    addBasket: (state,action ) => {
+
+     
+      state.sepet.push(action.payload);
+      
     }
  
   },

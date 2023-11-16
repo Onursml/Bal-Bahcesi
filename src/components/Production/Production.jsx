@@ -5,7 +5,7 @@ import { getproduct } from '@/firebase/firebase'
 import './style.css'
 function Production() {
    const products = getproduct()
-   console.log(products)
+
 
 
     return (
