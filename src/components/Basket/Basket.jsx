@@ -29,7 +29,7 @@ function Basket() {
         <div className='' >Toplam Tutar :{basket.reduce((a,b) => a + b.price, 0) * 1.18} TL </div>  
         
 
-<div onClick={() => dispatch(addBasket())}   className='text-2xl font-bold text-center underline text-anarenk2 font-fontc' >Satın al</div>
+<div    className='text-2xl font-bold text-center underline text-anarenk2 font-fontc' >Satın al</div>
         </div>
     </div>
   )
