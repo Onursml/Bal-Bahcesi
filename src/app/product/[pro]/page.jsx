@@ -7,6 +7,7 @@ import { storage } from '@/firebase/firebase'
 import Basket from '@/components/Basket/Basket';
 import { addBasket } from '@/Redux/Basket';
 import { v4 as uuidv4 } from 'uuid';
+import {motion} from 'framer-motion'
 
 
 
@@ -48,7 +49,14 @@ useEffect(()=>{
   
 
     return (
-        <div className='flex justify-around max-sm:gap-5 p-5 max-sm:flex-col sm:h-[90vh]  w-ful bg-anarenk '>
+        <motion.div
+        initial={{opacity:0}}
+        animate={{opacity:1}}
+        exit={{opacity:0}}
+        transition={{duration:0.5}}
+        
+      
+        className='flex justify-around max-sm:gap-5 p-5 max-sm:flex-col sm:h-[90vh]  w-ful bg-anarenk '>
 
 
     <img className='shadow-2xl shadow-anarenk2 rounded-3xl h-96' src={resim} alt="" />
@@ -65,7 +73,7 @@ useEffect(()=>{
         </div>
       <Basket/>
         
-        </div>
+        </motion.div>
     )
 }
 

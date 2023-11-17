@@ -10,6 +10,7 @@ transform: skewY(-8deg);
 }
 
 .ttt{
+    transform: skewY(8deg);
     padding:0px 7px ;
     color: rgb(24, 49, 70);
     border-radius: 10px;
