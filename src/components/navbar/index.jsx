@@ -5,9 +5,15 @@ import Image from 'next/image'
 import Link from 'next/link'
 import Navbasket from '../MobileUI/Navbasket'
 import Menu from '../MobileUI/Menu'
+import { motion } from "framer-motion"
 function Navbar() {
   return (
-    <div className='top-0 flex w-full max-sm:sticky max-sm:justify-around navbar min-w-fit h-14'>
+    <motion.div 
+    initial={{opacity:0}}
+    animate={{opacity:1}}
+   
+
+    className='top-0 flex w-full max-sm:sticky max-sm:justify-around navbar min-w-fit h-14'>
       <Menu/>
       
     <Link href='/'>  <h1 className='flex p-1 ml-2 text-4xl text-white font-fonta w-fit text-anarenk2'>
@@ -20,7 +26,7 @@ function Navbar() {
       </div>
      <Navbasket/>
 
-    </div>
+    </motion.div>
   )
 }
 

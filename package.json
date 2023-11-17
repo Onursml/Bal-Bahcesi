@@ -12,6 +12,7 @@
     "@formkit/auto-animate": "^0.8.0",
     "@reduxjs/toolkit": "^1.9.7",
     "firebase": "^10.4.0",
+    "framer-motion": "^10.16.5",
     "next": "latest",
     "react": "latest",
     "react-dom": "latest",

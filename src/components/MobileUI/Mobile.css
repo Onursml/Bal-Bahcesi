@@ -29,3 +29,10 @@ font-weight: 600;
     transition: all .5s;
     white-space:nowrap;
 }
+
+
+
+.mbbasket{
+    border-radius: 2rem 0px 10px;
+    background: rgba(255, 255, 255, 0.956);
+}
