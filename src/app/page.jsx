@@ -3,6 +3,7 @@ import Gallery from '@/components/Gallery/Gallery'
 import Production from '@/components/Production/Production'
 
 
+
 export default function Home() {
   return (
  <main className= 'flex w-full h-full screen'>

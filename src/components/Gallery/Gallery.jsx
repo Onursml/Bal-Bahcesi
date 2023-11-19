@@ -4,6 +4,8 @@ import İmage from 'next/image'
 import './Gallery.css'
 import Photocomp from './photocomp';
 import {motion} from 'framer-motion'
+
+
 function Gallery() {
   
     
@@ -25,6 +27,7 @@ function Gallery() {
         <Photocomp foto="/bal1.jpg"/>
         <Photocomp foto="/bal2.jpg"/>
         <Photocomp foto="/bal3.jpg"/>
+   
         
       
      
