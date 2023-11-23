@@ -20,7 +20,7 @@ function BasketContent() {
   const uniqueBasketItems = Array.from(new Set(basket.map((item) => item.name)));
 
   return (
-    <div ref={parent} className={`fixed flex items-center flex-col z-40 mbbasket overflow-hidden top-14 right-0 h-full transition-all duration-500 sm:hidden ${visible ? "w-[90%] p-4 " : "w-0 bg-opacity-100"}`}>
+    <div className={`fixed flex items-center flex-col z-40 mbbasket overflow-hidden top-14 right-0 h-full transition-all duration-500 sm:hidden ${visible ? "w-[90%] p-4 " : "w-0 bg-opacity-100"}`}>
       <h1 className='relative font-fontb'>Sepetiniz <button onClick={() => dispatch(openbasket())} className='absolute top-0 left-[-6rem] text-xl'>x</button></h1>
       <hr className='w-full mb-5 ' />
       <div ref={parent} className='flex flex-col h-96 w-72 '>

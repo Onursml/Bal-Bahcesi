@@ -47,25 +47,21 @@ const db = getFirestore(app); export const storage=getStorage(app)
   setDoc(doc(db, 'users', "onur"), data)
     .then(() => {console.log('kayıt olundusadasd adasd')}).catch(error=>console.log(error))
 }
-export const getDocuments=()=>{
-  const collectionref=collection(db,"users")
-    const [duyuru,setduyuru]=useState([])
-    useEffect(() => {
- const q=query(collectionref) 
-      onSnapshot(q,snapshot=>{
-     setduyuru(snapshot.docs.map((doc)=>({id:doc.id, ...doc.data()})))
-     
-    })
-    }, [])
-    
-  return duyuru
-  }
+
 //--------------------------------------------------------------------------------------------------------------------------
 
  export const addproduct=async (userdata)=>{
     
     const docRef=collection(db,"product")
     await addDoc(docRef,userdata)
+
+
+}
+//-----------------------------------------------------------------
+export const addGalery=async (galery)=>{
+    
+  const docRef=collection(db,"galery")
+  await addDoc(docRef,galery)
 
 
 }
@@ -96,4 +92,17 @@ export const getnotlar=()=>{
          }, [])
          return not
          }
-    
+
+         export const getGallery = () => {
+          const collectionref = collection(db, "galery"); // Doğru koleksiyon adını buraya ekledik
+        
+          const [galery, setgalery] = useState([]);
+        
+          useEffect(() => {
+            onSnapshot(collectionref, (snapshot) => {
+              setgalery(snapshot.docs.map((doc) => ({ id: doc.id, ...doc.data() })));
+            });
+          }, []); // useEffect içinde collectionref bağımlılığını ekledik
+        
+          return galery;
+        };  

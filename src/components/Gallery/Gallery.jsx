@@ -1,14 +1,15 @@
-"use client"
-import React, { useEffect, useRef, useState } from 'react'
-import İmage from 'next/image'
 import './Gallery.css'
-import Photocomp from './photocomp';
-import {motion} from 'framer-motion'
+import React, {  } from 'react'
+import İmage from 'next/image'
+import SlideCompenets from './SlideCompenets'
+import Kampanyalar from './kampanyalar'
+
+
 
 
 function Gallery() {
   
-    
+
 
    
 
@@ -17,22 +18,13 @@ function Gallery() {
 
   
   return (
-    <motion.div
-    initial={{opacity:0}}
-    animate={{opacity:1}}
-    
-    className='flex w-full gap-2 p-2 overflow-scroll max-sm:w-[97%] max-sm:mx-auto  shadow-2xl h-60 gallery max-sm:p-1 max-sm:mr-0'>
-      
-        <Photocomp foto="/bal.jpg"/>
-        <Photocomp foto="/bal1.jpg"/>
-        <Photocomp foto="/bal2.jpg"/>
-        <Photocomp foto="/bal3.jpg"/>
-   
-        
-      
-     
-      
-          </motion.div>
+  <div className={`w-full h-[23rem]  flex flex-row  gap-6  rounded-3xl  `}>
+    <div className={`shadow-2xl w-[40rem] rounded-2xl `}>
+<SlideCompenets/>
+    </div>
+   <Kampanyalar/>
+
+  </div>
   )
 }
 

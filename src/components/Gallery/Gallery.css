@@ -1,11 +1,6 @@
-.gallery {
+.Gallery {
 
- scroll-behavior: smooth;
-   overflow-y: visible;
-    overflow-x: scroll; /* Kaydırma çubuğunu göstermek için otomatik kaydırma eklenir */
 
-   border-bottom: none;
-   border-radius: 5px;
   }
   
   /* Kaydırma çubuğu özelleştirme */
@@ -21,5 +16,33 @@
   }
   
   .gallery::-webkit-scrollbar-thumb:hover {
+    background-color: #747a00; /* Kaydırma çubuğu başlık rengi (üzerine gelince) */
+  }
+
+
+  .slick{
+
+    border: 1px solid red;
+    height: 16rem;
+padding: 5px;
+    margin-right: 5px;
+    margin-bottom: 10px;
+    
+  }
+
+
+
+  .kamp::-webkit-scrollbar {
+    width: 20px; /* Kaydırma çubuğu genişliği (örnek) */
+    height: 5px;
+  }
+  
+  .kamp::-webkit-scrollbar-thumb {
+   
+    background-color: #eeb600; /* Kaydırma çubuğu başlık rengi (örnek) */
+    border-radius: 5px; /* Köşe yuvarlama (örnek) */
+  }
+  
+  .kamp::-webkit-scrollbar-thumb:hover {
     background-color: #747a00; /* Kaydırma çubuğu başlık rengi (üzerine gelince) */
   }

@@ -1,13 +1,15 @@
 "use client"
 import Product from '@/components/Production/Product'
-import { addproduct, storage } from '@/firebase/firebase';
+import { addproduct, storage,addGalery } from '@/firebase/firebase';
 import { uploadBytes,ref} from 'firebase/storage';
 import React, { useEffect, useRef } from 'react'
 import { useState } from 'react'
+import { toast } from 'react-toastify';
 import { v4 as uuidv4 } from 'uuid';
 function page() {
   const formref = useRef()
   const [image,setimage]=useState()
+  const [galimage,setgalimage]=useState()
 
 
 const [data,setData]=useState(
@@ -21,6 +23,14 @@ const [data,setData]=useState(
   
  
 )
+const [Galery,setGalery]=useState(
+  {
+ 
+    title:"",
+    content:"",
+   
+
+  })
 // useEffect(()=>{
 //   const selectedImage = data.id  ;
 
@@ -53,11 +63,30 @@ addproduct(üründata)
 formref.current.reset()
 
  }
+ const addGaleri=(e)=>{
+  e.preventDefault()
+  console.log(Galery)
 
+
+  const quid= uuidv4()
+const storafeRef=ref(storage,`Galery/${quid}`)
+uploadBytes(storafeRef,galimage)
+const üründata=
+  {
+    id:quid,
+    ttie:Galery.title,
+  content:Galery.content,
+   
+  }
+
+addGalery(üründata)
+formref.current.reset()
+toast('galeriye eklendi')
+ }
 
   return (
     <div className='w-full gap-3 flex flex-col mt-2 border p-4 h-[85vh]'>
-
+{/* -------------------------------ÜRÜN EKLEME---------------------------------------------------------------------------------------  */}
           <form ref={formref} className='flex flex-col gap-3 ' onSubmit={addurun} action="">
           <div className='flex gap-5 '>
 <label className='px-2 border rounded-lg' htmlFor="">Ürün Resmi:</label>
@@ -88,6 +117,37 @@ formref.current.reset()
 
 
  <button className='px-2 border rounded-md ' onClick={()=>console.log(data)} type="submit"  >ekle</button>
+    
+            </form>   
+            <hr className='w-full h-2 mt-5 mb-5' />
+{/* -----------------------------------------------GALERY EKLEME--------------------------------------------------------------------------------------- */}
+            <form ref={formref} className='flex flex-col gap-3 ' onSubmit={addGaleri} action="">
+          <div className='flex gap-5 '>
+<label className='px-2 border rounded-lg' htmlFor="">kapak fotografı:</label>
+<input onChange={e=>setgalimage(e.target.files[0])
+} 
+ className='px-2 border rounded-md ' type="file" />
+              </div>
+
+              <div className='flex gap-5 '>
+<label className='px-2 border rounded-lg' htmlFor="">title:</label>
+<input onChange={e=>setGalery({...Galery,title:e.target.value})} 
+ className='px-2 border rounded-md ' type="text" />
+              </div>
+
+
+
+              <div className='flex gap-5 '>
+<label className='px-2 border rounded-lg h-fit' htmlFor="">content:</label>
+<textarea onChange={e=>setGalery({...Galery,content:e.target.value})}  rows={5} cols={50} 
+ className='px-2 border rounded-md ' type="text" />
+
+              </div>
+
+           
+
+
+ <button className='px-2 border rounded-md '  type="submit"  >ekle</button>
     
             </form>   
     

@@ -13,7 +13,7 @@ function Navbar() {
     animate={{opacity:1}}
    
 
-    className='top-0 flex w-full max-sm:sticky max-sm:justify-around navbar min-w-fit h-14'>
+    className='top-0 z-50 flex w-full max-sm:sticky max-sm:justify-around navbar min-w-fit h-14'>
       <Menu/>
       
     <Link href='/'>  <h1 className='flex p-1 ml-2 text-4xl text-white font-fonta w-fit text-anarenk2'>
